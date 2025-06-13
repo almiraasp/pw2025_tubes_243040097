@@ -1,0 +1,136 @@
+/* Awal Promo */
+.card-img-top {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+.card-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.card-text {
+  font-size: 0.875rem;
+  color: gray;
+}
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+.card-link:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s;
+}
+/* Akhir Promo */
+
+/* Awal Top Footer */
+.container-sosmed {
+  background: #eb8a3e;
+}
+
+.sosial-media a {
+  color: #f7efe2;
+  text-decoration: none;
+}
+
+.sosial-media a:hover {
+  cursor: pointer;
+  color: #bcb7ae; /* tetap hitam saat hover */
+  text-decoration: none;
+}
+
+.top-footer {
+  width: 100%;
+
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: #f7efe2;
+}
+
+.top-footer h2 i {
+  margin-right: 0.5rem;
+}
+
+.top-footer .social-media {
+  margin-top: 1rem;
+}
+
+.top-footer .social-media i {
+  width: 50px;
+  height: 50px;
+  line-height: 25px;
+  border-radius: 50%;
+
+  box-shadow: var(--box-shadow);
+  text-align: center;
+
+  padding: 0.6rem;
+  font-size: 1.3rem;
+}
+
+/* Akhir Top Footer */
+footer {
+  background-color: ;
+  width: 100%;
+  min-height: 73vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+footer .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: ;
+  opacity: 0.5;
+}
+
+.footer-content {
+  position: absolute;
+  top: 10%;
+}
+
+.footer-content .img-box {
+  text-align: center;
+}
+
+footer .inner-footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 0;
+  color: blueviolet;
+}
+
+footer .inner-footer .card {
+  margin: 0.5rem;
+}
+
+footer .inner-footer .card li {
+  cursor: pointer;
+  line-height: 1.5rem;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+footer .inner-footer .card li:nth-child(1),
+footer .inner-footer .card p {
+  margin-top: 1rem;
+}
+
+footer .inner-footer .card p {
+  margin-bottom: 1rem;
+  font-size: 16px;
+}
+
+/* footer section */
