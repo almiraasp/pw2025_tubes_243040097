@@ -88,7 +88,7 @@ $jumlahPromoProduk = mysqli_num_rows($queryPromoProduk);
         <div class="container mt-4">
             <div class="row g-4">
                 <!-- Kacamata -->
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-6">
                     <div class="summary-card border-blue p-3 bg-white">
                         <div class="d-flex justify-content-between align-items-center h-100">
                             <div>
@@ -103,7 +103,7 @@ $jumlahPromoProduk = mysqli_num_rows($queryPromoProduk);
                 </div>
 
                 <!-- Kacamata Hitam -->
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-6">
                     <div class="summary-card border-green bg-white">
                         <div class="d-flex justify-content-between align-items-center">
                             <div>
@@ -117,7 +117,7 @@ $jumlahPromoProduk = mysqli_num_rows($queryPromoProduk);
                 </div>
 
                 <!-- Lensa -->
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-6">
                     <div class="summary-card border-warning p-3 bg-white">
                         <div class="d-flex justify-content-between align-items-center">
                             <div>
@@ -132,7 +132,7 @@ $jumlahPromoProduk = mysqli_num_rows($queryPromoProduk);
                 </div>
 
                 <!-- Promo Produk -->
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-6">
                     <div class="summary-card border-danger p-3 bg-white">
                         <div class="d-flex justify-content-between align-items-center">
                             <div>

@@ -12,7 +12,7 @@ $cari = isset($_GET['cari']) ? $_GET['cari'] : '';
 if (!empty($cari)) {
     $queryLensa = "SELECT * FROM produk_kaca 
             WHERE produk LIKE '%$cari%' 
-               OR jenis_kaca LIKE '%$cari%' 
+               OR tittle LIKE '%$cari%' 
                OR brand LIKE '%$cari%'";
 } else {
     $queryLensa = "SELECT * FROM produk_kaca";
@@ -100,7 +100,7 @@ $result = mysqli_query($conn, $queryLensa);
                                 <tr>
                                     <td><?php echo $i++; ?></td>
                                     <td><?php echo $data['produk']; ?></td>
-                                    <td><?php echo $data['jenis_kaca']; ?></td>
+                                    <td><?php echo $data['tittle']; ?></td>
                                     <td><?php echo $data['brand']; ?></td>
                                     <td><?php echo $data['harga']; ?></td>
                                     <td><?php echo $data['deskripsi']; ?></td>

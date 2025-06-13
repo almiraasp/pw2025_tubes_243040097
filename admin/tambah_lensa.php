@@ -3,13 +3,13 @@ include '../koneksi.php';
 
 if (isset($_POST['submit'])) {
     $produk = $_POST['produk'];
-    $jenis_kaca = $_POST['jenis_kaca'];
+    $tittle = $_POST['tittle'];
     $brand = $_POST['brand'];
     $harga = $_POST['harga'];
     $deskripsi = $_POST['deskripsi'];
 
-    $sql = "INSERT INTO produk_kaca (produk, jenis_kaca, brand, harga, deskripsi)
-            VALUES ('$produk', '$jenis_kaca', '$brand', '$harga', '$deskripsi')";
+    $sql = "INSERT INTO produk_kaca (produk, tittle, brand, harga, deskripsi)
+            VALUES ('$produk', '$tittle', '$brand', '$harga', '$deskripsi')";
 
     if (mysqli_query($conn, $sql)) {
         echo "<script>alert('Data berhasil ditambahkan!'); window.location='lensa.php';</script>";
@@ -35,8 +35,8 @@ if (isset($_POST['submit'])) {
             <input type="text" class="form-control" name="produk" required>
         </div>
         <div class="mb-3">
-            <label for="jenis_kaca" class="form-label">Jenis Kaca</label>
-            <input type="text" class="form-control" name="jenis_kaca" required>
+            <label for="jenis_kaca" class="form-label">Tittle</label>
+            <input type="text" class="form-control" name="tittle" required>
         </div>
         <div class="mb-3">
             <label for="brand" class="form-label">Brand</label>

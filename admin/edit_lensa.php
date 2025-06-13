@@ -18,14 +18,14 @@ if (!$data) {
 
 if (isset($_POST['submit'])) {
     $produk = $_POST['produk'];
-    $jenis_kaca = $_POST['jenis_kaca'];
+    $tittle = $_POST['tittle'];
     $brand = $_POST['brand'];
     $harga = $_POST['harga'];
     $deskripsi = $_POST['deskripsi'];
 
     $sql = "UPDATE produk_kaca SET 
                 produk = '$produk', 
-                jenis_kaca = '$jenis_kaca', 
+                tittle = '$tittle', 
                 brand = '$brand', 
                 harga = '$harga', 
                 deskripsi = '$deskripsi' 
@@ -55,8 +55,8 @@ if (isset($_POST['submit'])) {
             <input type="text" class="form-control" name="produk" value="<?= htmlspecialchars($data['produk']) ?>" required>
         </div>
         <div class="mb-3">
-            <label class="form-label">Jenis Kaca</label>
-            <input type="text" class="form-control" name="jenis_kaca" value="<?= htmlspecialchars($data['jenis_kaca']) ?>" required>
+            <label class="form-label">Tittle</label>
+            <input type="text" class="form-control" name="tittle" value="<?= htmlspecialchars($data['tittle']) ?>" required>
         </div>
         <div class="mb-3">
             <label class="form-label">Brand</label>
